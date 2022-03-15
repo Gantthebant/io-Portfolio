@@ -44,7 +44,7 @@ h1.mainheader{
 	margin-top: 10rem;
 	text-align:center;
 	font-family: 'Roboto', sans-serif;
-	font-size: 4rem;
+	font-size: 3.5rem;
 	color: #FFFFFF;
 	border: #FFFFFF solid 0.3rem;
 }
@@ -180,7 +180,7 @@ footer {
     }
     
     h2{
-        margin: 1rem;
+        margin: 0.5rem;
         align-self: center;
         justify-self: center;
     }
@@ -200,6 +200,11 @@ footer {
         display: grid;
         grid-template-column: repeat(4 , 1fr);
         grid-template-rows: repeat ( 5 , 13vh);
+        transition: transform 0.2s;
+    }
+    
+    section.project1:hover{
+        transform: scale(1.02);
     }
 
     img.project-1{
@@ -210,6 +215,11 @@ footer {
         min-width: 200px;
         min-width: auto;
         align-self: stretch;
+        transition: transform 0.2s;
+    }
+    
+    img.project-1:hover{
+        transform: scale(1.1);
     }
     
     button.p1button{
@@ -237,13 +247,18 @@ footer {
     h2.project1-header{
         grid-column: 1 / 3;
         grid-row: 1 / 2;
-        font-size: 4rem;
+        font-size: 3rem;
     }
     
     section.project2{
         display: grid;
         grid-template-column: repeat(4 , 1fr);
         grid-template-rows: repeat ( 5 , 13vh);
+        transition: transform 0.2s;
+    }
+    
+    section.project2:hover{
+        transform: scale(1.02);
     }
 
     img.project-2{
@@ -252,6 +267,11 @@ footer {
         padding: 1rem;
         align-self: center;
         align-self: stretch;
+        transition: transform 0.2s;
+    }
+    
+    img.project-2:hover{
+        transform: scale(1.1);
     }
     
     button.p2button{
@@ -276,13 +296,18 @@ footer {
     h2.project2-header{
         grid-column: 3 / 5;
         grid-row: 1 / 2;
-        font-size: 4rem;
+        font-size: 3rem;
     }
     
     section.project3{
         display: grid;
         grid-template-column: repeat(4 , 1fr);
         grid-template-rows: repeat ( 5 , 13vh);
+        transition: transform 0.2s;
+    }
+    
+    section.project3:hover{
+        transform: scale(1.02);
     }
 
     img.project-3{
@@ -291,6 +316,11 @@ footer {
         padding: 1rem;
         align-self: center;
         align-self: stretch;
+        transition: transform 0.2s;
+    }
+    
+    img.project-3:hover{
+        transform: scale(1.1);
     }
     
     button.p3button{
@@ -315,20 +345,30 @@ footer {
     h2.project3-header{
         grid-column: 1 / 3;
         grid-row: 1 / 2;
-        font-size: 4rem;
+        font-size: 3rem;
     }
+    
     section.project4{
         display: grid;
         grid-template-column: repeat(4 , 1fr);
         grid-template-rows: repeat ( 5 , 13vh);
+        transition: transform 0.2s;
     }
 
+    section.project4:hover{
+        transform: scale(1.02);
+    }
     img.project-4{
         grid-column: 1 / 3;
         grid-row: 1 / 4;
         padding: 1rem;
         align-self: center;
         align-self: stretch;
+        transition: transform 0.2s;
+    }
+    
+    img.project-4:hover{
+        transform: scale(1.1);
     }
     
     button.p4button{
@@ -353,12 +393,16 @@ footer {
     h2.project4-header{
         grid-column: 3 / 5;
         grid-row: 1 / 2;
-        font-size: 4rem;
+        font-size: 3rem;
     }
     
+    i:hover {
+        color: #494946;
+    }
+    
+    button:hover{
+        background-color: #494946;
+        color: #FFFFFF;
+    }
     
 }
-
-/*i:hover {
-	color: yellow;
-}*/
