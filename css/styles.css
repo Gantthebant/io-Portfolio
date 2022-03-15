@@ -5,109 +5,108 @@
 	font-family: 'Roboto', sans-serif;
 }
 
-body{
+body {
     margin: 0;
     padding: 0;
 }
 
-button{
+button {
     border-radius: 5px;
 }
 
-header.maincontent{
-	width: 100%;
-	display: grid;
-	grid-template-column: 1fr;
+header.maincontent {
+    width: 100%;
+    display: grid;
+    grid-template-column: 1fr;
     grid-template-rows: 100vh;
 }
 
-.splash1{
-	width: 100%;
-	height: auto;
-	grid-column: 1;
-	grid-row: 1;
+.splash1 {
+    width: 100%;
+    height: auto;
+    grid-column: 1;
+    grid-row: 1;
     max-height: 1000px;
-    max-width:600px;
+    max-width: 600px;
     align-self: center;
 }
 
-.splash{
-	display:none;
+.splash {
+    display: none;
 }
 
-section.textcontainer{
-	grid-column: 1 ;
-	grid-row: 1;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	
+section.textcontainer {
+    grid-column: 1 ;
+    grid-row: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-h1.mainheader{
-	margin-top: 10rem;
-	text-align:center;
-	font-family: 'Roboto', sans-serif;
-	font-size: 3.5rem;
-	color: #FFFFFF;
-	border: #FFFFFF solid 0.3rem;
+h1.mainheader {
+    margin-top: 10rem;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 3.5rem;
+    color: #FFFFFF;
+    border: #FFFFFF solid 0.3rem;
 }
 
-h2.slogan{
-	margin-top: 5rem;
-	text-align: center;
-	font-family: 'Roboto', sans-serif;
-	font-size: 2rem;
-	color: #FFFFFF;
+h2.slogan {
+    margin-top: 5rem;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    color: #FFFFFF;
 }
 
-button.pbutton{
-	margin-top: 5rem;
-	align: center;
-	padding: 1rem 3rem;
-	font-size: 2rem;
+button.pbutton {
+    margin-top: 5rem;
+    align: center;
+    padding: 1rem 3rem;
+    font-size: 2rem;
 }
 
-a{
+a {
     text-decoration: none;
     color: #262625;
 }
 
-nav.social-links{
-	display: flex;
-	gap: 2rem;
-	border: #FFFFFF solid 0.3rem;
-	padding: 0.2rem 2rem;
+nav.social-links {
+    display: flex;
+    gap: 2rem;
+    border: #FFFFFF solid 0.3rem;
+    padding: 0.2rem 2rem;
 }
 
-.social-links i{
-	text-align: center;
-	font-size: 3rem;
-	color: #FFFFFF;
+.social-links i {
+    text-align: center;
+    font-size: 3rem;
+    color: #FFFFFF;
 }
 
-section.project1{
+section.project1 {
     background-color: #73645C;
     color: #FFFFFF;
     display: flex;
     flex-direction: column;
 }
 
-.list-of-projects p{
+.list-of-projects p {
     padding: 1rem;
-    text-align:center;
+    text-align: center;
 }
 
-.list-of-projects h2{
+.list-of-projects h2 {
     text-align: center;
     font-size: 2rem;
 }
 
-hr{
+hr {
     width: 80%;
 }
 
-button{
+button {
     font-weight: 900;
     color: #262625;
     border: none;
@@ -115,49 +114,49 @@ button{
     padding-bottom: 1rem;
 }
 
-.list-of-projects img{
-	width: 100%;
-	height: auto;
+.list-of-projects img {
+    width: 100%;
+    height: auto;
 }
 
-section.project2{
+section.project2 {
     display: flex;
     flex-direction: column;
     background-color: #D18080;
     color: #FFFFFF;
 }
 
-section.project3{
+section.project3 {
     display: flex;
     flex-direction: column;
     background-color: #BEACA4;
     color: #FFFFFF
 }
 
-section.project4{
+section.project4 {
     display: flex;
     flex-direction: column;
     background-color: #262625;
-    color: #FFFFFF
+    color: #FFFFFF;
 }
 
-nav.projectnav{
+nav.projectnav {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.projectnav button{
+.projectnav button {
     padding-right: 2rem;
     padding-left: 2rem;
 }
 
-footer{
+footer {
     background-color: #BEACA4;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
     padding: 1rem 1rem 0 1rem;
     color: #FFFFFF; 
@@ -165,53 +164,53 @@ footer{
 
 @media only screen and (min-width: 600px){
     
-    .splash1{
+    .splash1 {
         display: none;
     }
 
-    .splash{
-    	width: 100%;
-    	height: auto;
-    	grid-column: 1;
-    	grid-row: 1;
+    .splash {
+        width: 100%;
+        height: auto;
+        grid-column: 1;
+        grid-row: 1;
         display: unset;
         align-self: stretch;
     }
     
-    hr{
+    hr {
         align-self: end;
         border: 0.1rem solid #FFFFFF;
     }
     
-    h2{
+    h2 {
         margin: 0.5rem;
         align-self: center;
         justify-self: center;
     }
     
-    button{
+    button {
         margin: 1rem;
         padding: 0 1rem;
         max-height: 5rem;
         min-height: 5rem;
     }
     
-    h1.mainheader{
+    h1.mainheader {
         padding: 1rem;
     }
     
-    section.project1{
+    section.project1 {
         display: grid;
         grid-template-column: repeat(4 , 1fr);
-        grid-template-rows: repeat ( 5 , 13vh);
+        grid-template-rows: repeat (5 , 13vh);
         transition: transform 0.2s;
     }
     
-    section.project1:hover{
+    section.project1:hover {
         transform: scale(1.02);
     }
 
-    img.project-1{
+    img.project-1 {
         grid-column: 3 / 5;
         grid-row: 1 / 4;
         padding: 1rem;
@@ -222,11 +221,11 @@ footer{
         transition: transform 0.2s;
     }
     
-    img.project-1:hover{
+    img.project-1:hover {
         transform: scale(1.1);
     }
     
-    button.p1button{
+    button.p1button {
         grid-column: 1 / 2;
         grid-row: 3 / 4;
         margin: 1rem;
@@ -235,7 +234,7 @@ footer{
         min-height: 3rem;
     }
     
-    p.p1-description{
+    p.p1-description {
         grid-column: 1 / 3;
         grid-row: 2 / 3;
         text-align: left;
@@ -243,30 +242,30 @@ footer{
         text-align: justify;
     }
     
-    .project1 hr{
+    .project1 hr {
         grid-column: 1 / 3;
         grid-row: 1 / 2;
         align-self: end;
     }
     
-    h2.project1-header{
+    h2.project1-header {
         grid-column: 1 / 3;
         grid-row: 1 / 2;
         font-size: 3rem;
     }
     
-    section.project2{
+    section.project2 {
         display: grid;
         grid-template-column: repeat(4 , 1fr);
-        grid-template-rows: repeat ( 5 , 13vh);
+        grid-template-rows: repeat (5 , 13vh);
         transition: transform 0.2s;
     }
     
-    section.project2:hover{
+    section.project2:hover {
         transform: scale(1.02);
     }
 
-    img.project-2{
+    img.project-2 {
         grid-column: 1 / 3;
         grid-row: 1 / 4;
         padding: 1rem;
@@ -275,18 +274,18 @@ footer{
         transition: transform 0.2s;
     }
     
-    img.project-2:hover{
+    img.project-2:hover {
         transform: scale(1.1);
     }
     
-    button.p2button{
+    button.p2button {
         grid-column: 4 / 5;
         grid-row: 3 / 4;
         max-height: 3rem;
         min-height: 3rem;
     }
     
-    p.p2-description{
+    p.p2-description {
         grid-column: 3 / 5;
         grid-row: 2 / 3;
         text-align: right;
@@ -294,29 +293,29 @@ footer{
         text-align: justify;
     }
     
-    .project2 hr{
+    .project2 hr {
         grid-column: 3 / 5;
         grid-row: 1 / 2;
     }
     
-    h2.project2-header{
+    h2.project2-header {
         grid-column: 3 / 5;
         grid-row: 1 / 2;
         font-size: 3rem;
     }
     
-    section.project3{
+    section.project3 {
         display: grid;
         grid-template-column: repeat(4 , 1fr);
-        grid-template-rows: repeat ( 5 , 13vh);
+        grid-template-rows: repeat (5 , 13vh);
         transition: transform 0.2s;
     }
     
-    section.project3:hover{
+    section.project3:hover {
         transform: scale(1.02);
     }
 
-    img.project-3{
+    img.project-3 {
         grid-column: 3 / 5;
         grid-row: 1 / 4;
         padding: 1rem;
@@ -325,18 +324,18 @@ footer{
         transition: transform 0.2s;
     }
     
-    img.project-3:hover{
+    img.project-3:hover {
         transform: scale(1.1);
     }
     
-    button.p3button{
+    button.p3button {
         grid-column: 1 / 2;
         grid-row: 3 / 4;
         max-height: 3rem;
         min-height: 3rem;
     }
     
-    p.p3-description{
+    p.p3-description {
         grid-column: 1 / 3;
         grid-row: 2 / 3;
         text-align: left;
@@ -344,28 +343,28 @@ footer{
         text-align: justify;
     }
     
-    .project3 hr{
+    .project3 hr {
         grid-column: 1 / 3;
         grid-row: 1 / 2;
     }
     
-    h2.project3-header{
+    h2.project3-header {
         grid-column: 1 / 3;
         grid-row: 1 / 2;
         font-size: 3rem;
     }
     
-    section.project4{
+    section.project4 {
         display: grid;
         grid-template-column: repeat(4 , 1fr);
-        grid-template-rows: repeat ( 5 , 13vh);
+        grid-template-rows: repeat (5 , 13vh);
         transition: transform 0.2s;
     }
 
-    section.project4:hover{
+    section.project4:hover {
         transform: scale(1.02);
     }
-    img.project-4{
+    img.project-4 {
         grid-column: 1 / 3;
         grid-row: 1 / 4;
         padding: 1rem;
@@ -374,18 +373,18 @@ footer{
         transition: transform 0.2s;
     }
     
-    img.project-4:hover{
+    img.project-4:hover {
         transform: scale(1.1);
     }
     
-    button.p4button{
+    button.p4button {
         grid-column: 4 / 5;
         grid-row: 3 / 4;
         max-height: 3rem;
         min-height: 3rem;
     }
     
-    p.p4-description{
+    p.p4-description {
         grid-column: 3 / 5;
         grid-row: 2 / 3;
         text-align: right;
@@ -393,36 +392,36 @@ footer{
         text-align: justify;
     }
     
-    .project4 hr{
+    .project4 hr {
         grid-column: 3 / 5;
         grid-row: 1 / 2;
     }
     
-    h2.project4-header{
+    h2.project4-header {
         grid-column: 3 / 5;
         grid-row: 1 / 2;
         font-size: 3rem;
     }
     
-    i:hover{
+    i:hover {
         color: #494946;
     }
     
-    button:hover{
+    button:hover {
         background-color: #494946;
         color: #FFFFFF;
     }
     
-    section.aboutme{
+    section.aboutme {
         width: 70%;
         
     }
     
-    .aboutme p{
+    .aboutme p {
         text-align: center;
     }
     
-    section h2{
+    section h2 {
         font-size: 4rem;
     }
     
