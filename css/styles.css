@@ -1,7 +1,8 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Roboto:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 * {
-    box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -11,7 +12,27 @@ body {
 }
 
 button {
+    font-weight: 900;
+    color: #262625;
+    border: none;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     border-radius: 5px;
+    background: #FFFFFF;
+}
+
+section {
+    color: #FFFFFF;
+}
+
+footer {
+    background-color: #BEACA4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem 1rem 0 1rem;
+    color: #FFFFFF;
 }
 
 header.maincontent {
@@ -19,6 +40,7 @@ header.maincontent {
     display: grid;
     grid-template-column: 1fr;
     grid-template-rows: 100vh;
+    overflow: hidden;
 }
 
 .splash1 {
@@ -26,16 +48,15 @@ header.maincontent {
     height: auto;
     grid-column: 1;
     grid-row: 1;
-    max-height: 1000px;
-    max-width: 600px;
     align-self: center;
+    align-self: stretch;
 }
 
 .splash {
     display: none;
 }
 
-section.textcontainer {
+div.textcontainer {
     grid-column: 1 ;
     grid-row: 1;
     display: flex;
@@ -46,30 +67,26 @@ section.textcontainer {
 h1.mainheader {
     margin-top: 10rem;
     text-align: center;
-    font-family: 'Roboto', sans-serif;
     font-size: 3.5rem;
     color: #FFFFFF;
     border: #FFFFFF solid 0.3rem;
+    font-weight: 300;
+    border-radius: 5px;
 }
 
 h2.slogan {
     margin-top: 5rem;
     text-align: center;
-    font-family: 'Roboto', sans-serif;
     font-size: 2rem;
     color: #FFFFFF;
+    text-align: justify;
 }
 
 button.pbutton {
     margin-top: 5rem;
     align: center;
     padding: 1rem 3rem;
-    font-size: 2rem;
-}
-
-a {
-    text-decoration: none;
-    color: #262625;
+    font-size: 2rem;  
 }
 
 nav.social-links {
@@ -77,6 +94,7 @@ nav.social-links {
     gap: 2rem;
     border: #FFFFFF solid 0.3rem;
     padding: 0.2rem 2rem;
+    border-radius: 5px;
 }
 
 .social-links i {
@@ -87,14 +105,13 @@ nav.social-links {
 
 section.project1 {
     background-color: #73645C;
-    color: #FFFFFF;
-    display: flex;
-    flex-direction: column;
 }
 
-.list-of-projects p {
+.list-of-projects p , footer p {
     padding: 1rem;
     text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    text-align: justify;
 }
 
 .list-of-projects h2 {
@@ -104,14 +121,8 @@ section.project1 {
 
 hr {
     width: 80%;
-}
-
-button {
-    font-weight: 900;
-    color: #262625;
-    border: none;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    border-radius: 5px;
+    border: 0.1rem solid #FFFFFF;
 }
 
 .list-of-projects img {
@@ -119,25 +130,21 @@ button {
     height: auto;
 }
 
-section.project2 {
+section.project1 , section.project2 , section.project3 , section.project4 {
     display: flex;
     flex-direction: column;
+}
+
+section.project2 { 
     background-color: #D18080;
-    color: #FFFFFF;
 }
 
 section.project3 {
-    display: flex;
-    flex-direction: column;
     background-color: #BEACA4;
-    color: #FFFFFF
 }
 
 section.project4 {
-    display: flex;
-    flex-direction: column;
     background-color: #262625;
-    color: #FFFFFF;
 }
 
 nav.projectnav {
@@ -152,17 +159,7 @@ nav.projectnav {
     padding-left: 2rem;
 }
 
-footer {
-    background-color: #BEACA4;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 1rem 1rem 0 1rem;
-    color: #FFFFFF; 
-}
-
-@media only screen and (min-width: 600px){
+@media only screen and (min-width: 600px) {
     
     .splash1 {
         display: none;
@@ -179,7 +176,6 @@ footer {
     
     hr {
         align-self: end;
-        border: 0.1rem solid #FFFFFF;
     }
     
     h2 {
@@ -199,33 +195,33 @@ footer {
         padding: 1rem;
     }
     
-    section.project1 {
+    section.project1 , section.project2 , section.project3 , section.project4 {
         display: grid;
-        grid-template-column: repeat(4 , 1fr);
-        grid-template-rows: repeat (5 , 13vh);
+        grid-template-column: repeat (4 , 1fr);
+        grid-template-rows: repeat (3 , 13vh);
         transition: transform 0.2s;
+        overflow: hidden;
     }
     
     section.project1:hover {
-        transform: scale(1.02);
+        background-color: #524842;
     }
-
-    img.project-1 {
+    
+    img.project-1 , img.project-3 {
         grid-column: 3 / 5;
         grid-row: 1 / 4;
         padding: 1rem;
         align-self: center;
-        min-width: 200px;
-        min-width: auto;
         align-self: stretch;
+        overflow: hidden;
         transition: transform 0.2s;
     }
     
-    img.project-1:hover {
-        transform: scale(1.1);
+    img.project-1:hover , img.project-2:hover , img.project-3:hover , img.project-4:hover {
+        transform: scale(1.05);
     }
     
-    button.p1button {
+    button.p1button , button.p3button {
         grid-column: 1 / 2;
         grid-row: 3 / 4;
         margin: 1rem;
@@ -234,58 +230,46 @@ footer {
         min-height: 3rem;
     }
     
-    p.p1-description {
+    p.p1-description , p.p3-description {
         grid-column: 1 / 3;
         grid-row: 2 / 3;
         text-align: left;
-        margin: 0;
         text-align: justify;
     }
     
-    .project1 hr {
+    .project1 hr , .project3 hr {
         grid-column: 1 / 3;
         grid-row: 1 / 2;
         align-self: end;
     }
     
-    h2.project1-header {
+    h2.project1-header , h2.project3-header {
         grid-column: 1 / 3;
         grid-row: 1 / 2;
         font-size: 3rem;
-    }
-    
-    section.project2 {
-        display: grid;
-        grid-template-column: repeat(4 , 1fr);
-        grid-template-rows: repeat (5 , 13vh);
-        transition: transform 0.2s;
     }
     
     section.project2:hover {
-        transform: scale(1.02);
+        background-color: #9D6161;
     }
 
-    img.project-2 {
+    img.project-2 , img.project-4 {
         grid-column: 1 / 3;
         grid-row: 1 / 4;
-        padding: 1rem;
+        margin: 1rem;
         align-self: center;
         align-self: stretch;
         transition: transform 0.2s;
     }
     
-    img.project-2:hover {
-        transform: scale(1.1);
-    }
-    
-    button.p2button {
+    button.p2button , button.p4button {
         grid-column: 4 / 5;
         grid-row: 3 / 4;
         max-height: 3rem;
         min-height: 3rem;
     }
     
-    p.p2-description {
+    p.p2-description , p.p4-description {
         grid-column: 3 / 5;
         grid-row: 2 / 3;
         text-align: right;
@@ -293,117 +277,34 @@ footer {
         text-align: justify;
     }
     
-    .project2 hr {
+    .project2 hr , .project4 hr {
         grid-column: 3 / 5;
         grid-row: 1 / 2;
     }
     
-    h2.project2-header {
+    h2.project2-header , h2.project4-header {
         grid-column: 3 / 5;
         grid-row: 1 / 2;
         font-size: 3rem;
-    }
-    
-    section.project3 {
-        display: grid;
-        grid-template-column: repeat(4 , 1fr);
-        grid-template-rows: repeat (5 , 13vh);
-        transition: transform 0.2s;
     }
     
     section.project3:hover {
-        transform: scale(1.02);
+        background-color: #A0928B;
     }
 
     img.project-3 {
-        grid-column: 3 / 5;
-        grid-row: 1 / 4;
-        padding: 1rem;
-        align-self: center;
-        align-self: stretch;
-        transition: transform 0.2s;
-    }
-    
-    img.project-3:hover {
-        transform: scale(1.1);
-    }
-    
-    button.p3button {
-        grid-column: 1 / 2;
-        grid-row: 3 / 4;
-        max-height: 3rem;
-        min-height: 3rem;
-    }
-    
-    p.p3-description {
-        grid-column: 1 / 3;
-        grid-row: 2 / 3;
-        text-align: left;
-        margin: 0;
-        text-align: justify;
-    }
-    
-    .project3 hr {
-        grid-column: 1 / 3;
-        grid-row: 1 / 2;
-    }
-    
-    h2.project3-header {
-        grid-column: 1 / 3;
-        grid-row: 1 / 2;
-        font-size: 3rem;
-    }
-    
-    section.project4 {
-        display: grid;
-        grid-template-column: repeat(4 , 1fr);
-        grid-template-rows: repeat (5 , 13vh);
-        transition: transform 0.2s;
+        width: 95%;
     }
 
     section.project4:hover {
-        transform: scale(1.02);
+        background-color: #151514;
     }
+    
     img.project-4 {
-        grid-column: 1 / 3;
-        grid-row: 1 / 4;
-        padding: 1rem;
-        align-self: center;
-        align-self: stretch;
-        transition: transform 0.2s;
+        width: 90%;
     }
     
-    img.project-4:hover {
-        transform: scale(1.1);
-    }
-    
-    button.p4button {
-        grid-column: 4 / 5;
-        grid-row: 3 / 4;
-        max-height: 3rem;
-        min-height: 3rem;
-    }
-    
-    p.p4-description {
-        grid-column: 3 / 5;
-        grid-row: 2 / 3;
-        text-align: right;
-        margin: 0;
-        text-align: justify;
-    }
-    
-    .project4 hr {
-        grid-column: 3 / 5;
-        grid-row: 1 / 2;
-    }
-    
-    h2.project4-header {
-        grid-column: 3 / 5;
-        grid-row: 1 / 2;
-        font-size: 3rem;
-    }
-    
-    i:hover {
+    nav.social-links i:hover {
         color: #494946;
     }
     
@@ -422,6 +323,14 @@ footer {
     
     section h2 {
         font-size: 4rem;
+    }
+    
+    .list-of-projects p {
+        padding: 5rem;
+    }  
+    
+    .list-of-projects button {
+        margin: 5rem;
     }
     
 }
