@@ -86,8 +86,7 @@ button.pbutton {
     margin-top: 5rem;
     align: center;
     padding: 1rem 3rem;
-    font-size: 2rem;
-    
+    font-size: 2rem;  
 }
 
 nav.social-links {
@@ -106,8 +105,6 @@ nav.social-links {
 
 section.project1 {
     background-color: #73645C;
-/*    display: flex;
-    flex-direction: column;*/
 }
 
 .list-of-projects p , footer p {
