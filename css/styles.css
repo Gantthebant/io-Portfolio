@@ -37,7 +37,7 @@ header.maincontent {
     width: 100%;
     display: grid;
     grid-template-column: 1fr;
-    grid-template-rows: 100vh;
+    grid-template-rows: auto;
     overflow: hidden;
 }
 
@@ -167,10 +167,6 @@ nav.projectnav {
     padding: 1rem;
 }
 
-footer{
-    margin-bottom: 6rem;
-}
-
 @media only screen and (min-width: 600px) {
     
     .splash1 {
@@ -231,7 +227,6 @@ footer{
         height: 78%;
         margin-top: 2.5rem;
         margin-right: 3.5rem;
-
     }
     
     img.project-1:hover , img.project-2:hover , img.project-3:hover , img.project-4:hover {
@@ -321,10 +316,6 @@ footer{
 
     section.project4:hover {
         background-color: #151514;
-    }
-    
-    img.project-4 {
-        width: 90%;
     }
     
     nav.social-links i:hover {
