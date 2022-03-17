@@ -9,14 +9,13 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: #BEACA4;
 }
 
 button {
     font-weight: 900;
     color: #262625;
     border: none;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
     border-radius: 5px;
     background: #FFFFFF;
 }
@@ -31,7 +30,6 @@ footer {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 1rem 1rem 0 1rem;
     color: #FFFFFF;
 }
 
@@ -39,7 +37,7 @@ header.maincontent {
     width: 100%;
     display: grid;
     grid-template-column: 1fr;
-    grid-template-rows: 100vh;
+    grid-template-rows: auto;
     overflow: hidden;
 }
 
@@ -57,7 +55,7 @@ header.maincontent {
 }
 
 div.textcontainer {
-    grid-column: 1 ;
+    grid-column: 1;
     grid-row: 1;
     display: flex;
     flex-direction: column;
@@ -76,6 +74,7 @@ h1.mainheader {
 
 h2.slogan {
     margin-top: 5rem;
+    margin-bottom: 5rem;
     text-align: center;
     font-size: 2rem;
     color: #FFFFFF;
@@ -83,15 +82,14 @@ h2.slogan {
 }
 
 button.pbutton {
-    margin-top: 5rem;
+    margin: 0;
     align: center;
-    padding: 1rem 3rem;
     font-size: 2rem;  
 }
 
 nav.social-links {
     display: flex;
-    gap: 2rem;
+    gap: 2.5rem;
     border: #FFFFFF solid 0.3rem;
     padding: 0.2rem 2rem;
     border-radius: 5px;
@@ -157,6 +155,16 @@ nav.projectnav {
 .projectnav button {
     padding-right: 2rem;
     padding-left: 2rem;
+    margin-top: 1rem;
+}
+
+.textcontainer .pbutton{
+    padding: 1rem;
+}
+
+.p1button , .p2button , .p3button , .p4button {
+    margin: 1rem;
+    padding: 1rem;
 }
 
 @media only screen and (min-width: 600px) {
@@ -172,6 +180,7 @@ nav.projectnav {
         grid-row: 1;
         display: unset;
         align-self: stretch;
+        object-fit: cover;
     }
     
     hr {
@@ -215,6 +224,9 @@ nav.projectnav {
         align-self: stretch;
         overflow: hidden;
         transition: transform 0.2s;
+        height: 78%;
+        margin-top: 2.5rem;
+        margin-right: 3.5rem;
     }
     
     img.project-1:hover , img.project-2:hover , img.project-3:hover , img.project-4:hover {
@@ -247,6 +259,7 @@ nav.projectnav {
         grid-column: 1 / 3;
         grid-row: 1 / 2;
         font-size: 3rem;
+        margin-top: 3rem;
     }
     
     section.project2:hover {
@@ -260,6 +273,10 @@ nav.projectnav {
         align-self: center;
         align-self: stretch;
         transition: transform 0.2s;
+    }
+    
+    img.project-1 , img.project-2 , img.project-3 , img.project-4 {
+        object-fit: cover;
     }
     
     button.p2button , button.p4button {
@@ -286,6 +303,7 @@ nav.projectnav {
         grid-column: 3 / 5;
         grid-row: 1 / 2;
         font-size: 3rem;
+        margin-top: 3rem;
     }
     
     section.project3:hover {
@@ -298,10 +316,6 @@ nav.projectnav {
 
     section.project4:hover {
         background-color: #151514;
-    }
-    
-    img.project-4 {
-        width: 90%;
     }
     
     nav.social-links i:hover {
@@ -331,6 +345,11 @@ nav.projectnav {
     
     .list-of-projects button {
         margin: 5rem;
+    }
+    
+    nav.social-links {
+        gap: 3rem;
+        padding: 0.2rem 2.5rem;
     }
     
 }
